@@ -47,7 +47,7 @@ public:
     void attachLayer(const sp<IBinder>& handle, const sp<Layer>& layer);
     void detachLayer(const Layer* layer);
 
-    sp<Layer> getLayerUser(const sp<IBinder>& handle) const;
+    bool isAttached (const sp<IBinder>& handle) const;
 
 private:
     // ISurfaceComposerClient interface
